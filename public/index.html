@@ -1,0 +1,41 @@
+<script src="alert-this.dom.js" data-text="Created in DOM"></script>
+<!-- <ce-alert-this text="asdfadf"></ce-alert-this> -->
+<script src="alert-this.customElement.js" data-text="Created in Shadow DOM (custom element)"></script>
+<!-- <my-element name="John" age="25"></my-element> -->
+<style>
+    button {
+        background: red;
+    }
+</style>
+
+<body>
+
+</body>
+
+<!-- <my-element name="John" age="25"></my-element>
+
+<script>
+	// Define the custom element using the CustomElementRegistry.define() method
+	class MyElement extends HTMLElement {
+		constructor() {
+			super();
+
+			// Retrieve the values of the 'name' and 'age' attributes
+			const name = this.getAttribute('name');
+			const age = this.getAttribute('age');
+
+			// Create a shadow root for the custom element
+			const shadow = this.attachShadow({ mode: 'open' });
+
+			// Create a paragraph element and set its content
+			const paragraph = document.createElement('p');
+			paragraph.textContent = `Name: ${name}, Age: ${age}`;
+
+			// Append the paragraph element to the shadow root
+			shadow.appendChild(paragraph);
+		}
+	}
+
+	// Register the custom element with the browser
+	customElements.define('my-element', MyElement);
+</script> -->
